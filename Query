@@ -1,0 +1,10 @@
+create database romadevi;
+use romadevi;
+CREATE TABLE `Register` (
+  `ID` INT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  `Name` char(100) NOT NULL,
+  `Email` varchar(120) NOT NULL UNIQUE,
+  `MobileNumber` varchar(120) NOT NULL,
+  `Password` varchar(120) NOT NULL,
+  `ConfirmPassword` varchar(120) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
